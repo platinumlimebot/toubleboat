@@ -6,16 +6,16 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-    let owners = '- Yioutra - и MCArTyR'
+    let owners = 'Yioutra, Emile, MCArTyR.'
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
-      .setColor('00ff54')
+      .setColor('ff0000')
       .setTitle('Список команд:')
       .addField(`${prefix}help - помощь`, `Пример: ${prefix}help`)
       .addField(`${prefix}invite - приглашения`, `Пример: ${prefix}invite`)
       .addField(`${prefix}developer - создатели бота`, `Пример: ${prefix}developer`)
-      .setFooter(`Сервер поддержки https://discord.gg/R4kGmkR`);
+      .setFooter(`Сервер поддержки бота: https://discord.gg/R4kGmkR`);
     message.channel.send(emb);
   }else
   if(message.content == `${prefix}developer`){
