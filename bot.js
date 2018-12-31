@@ -4,7 +4,9 @@ client.on('ready', () => {
  console.log('Bot started!');
 });
 
-
+let messageArray = message.content.split(' ')
+let command = messageArray[0]
+let args = messageArray.slice(1)
 client.on('message', message => {
     let owners = 'Yioutra, Emile, MCArTyR.'
     let prefix = 'tb!';
