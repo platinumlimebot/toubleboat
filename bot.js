@@ -29,14 +29,14 @@ let args = messageArray.slice(1)
       .setTitle('Приглашения:')
       .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/R4kGmkR)`);
 message.channel.send(emb)
-      }
-});
+}else 
 if(message.content == `${prefix}say`){
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Вы не администратор!");
     let botmessage = args.join(" ");
     message.delete().catch();
     message.channel.send(botmessage);
 }
+  });
 client.on('ready', () => {
 client.user.setPresence({
     game:{
