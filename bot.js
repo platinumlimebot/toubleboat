@@ -30,6 +30,7 @@ let args = messageArray.slice(1)
       .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/R4kGmkR)`);
 message.channel.send(emb)
 }else 
+let words = args[0];
 if(message.content == `${prefix}say`){
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Вы не администратор!");
     let botmessage = args.join(" ");
