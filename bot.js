@@ -31,11 +31,10 @@ let args = messageArray.slice(1)
 message.channel.send(emb)
 }else 
 let words = args[0];
-if(message.content == `${prefix}say`){
-  if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Вы не администратор!");
-    let botmessage = args.join(" ");
-    message.delete().catch();
-    message.channel.send(botmessage);
+        if(!words) return message.reply("Вы должны указать текст!");
+        let botmessage = args.join(" ");
+        message.delete().catch();
+        message.channel.send(botmessage);
 }
   });
 client.on('ready', () => {
