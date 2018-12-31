@@ -32,11 +32,10 @@ message.channel.send(emb)
       }
 });
 if(message.content == `${prefix}say`){
-  let words = args[0];
-        if(!words) return message.reply("Вы должны указать текст!");
-        let botmessage = args.join(" ");
-        message.delete().catch();
-        message.channel.send(botmessage);
+  if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Вы не администратор!");
+    let botmessage = args.join(" ");
+    message.delete().catch();
+    message.channel.send(botmessage);
 }
 client.on('ready', () => {
 client.user.setPresence({
