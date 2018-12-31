@@ -4,11 +4,11 @@ client.on('ready', () => {
  console.log('Bot started!');
 });
 
-let messageArray = message.content.split(' ')
-let command = messageArray[0]
-let args = messageArray.slice(1)
 client.on('message', message => {
-    let owners = 'Yioutra, Emile, MCArTyR.'
+  let messageArray = message.content.split(' ')
+let command = messageArray[0]
+let args = messageArray.slice(1) 
+ let owners = 'Yioutra, Emile, MCArTyR. Helper - MegaMix_Craft'
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
