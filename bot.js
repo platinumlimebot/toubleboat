@@ -6,7 +6,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-    let owners = 'Yioutra, Emile, MCArTyR!'
+    let owners = 'Yioutra, Emile, MCArTyR.'
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
