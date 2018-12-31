@@ -29,6 +29,11 @@ client.on('message', message => {
 message.channel.send(emb)
       }
 });
+  let words = args[0];
+        if(!words) return message.reply("Вы должны указать текст!");
+        let botmessage = args.join(" ");
+        message.delete().catch();
+        message.channel.send(botmessage);
 client.on('ready', () => {
 client.user.setPresence({
     game:{
