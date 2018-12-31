@@ -8,7 +8,7 @@ client.on('message', message => {
   let messageArray = message.content.split(' ')
 let command = messageArray[0]
 let args = messageArray.slice(1) 
- let owners = <@495969202868322324> , <@405026246049923072> , <@355384371362136075> , <@494883957117288448>'
+ let owners = '<@495969202868322324> , <@405026246049923072> , <@355384371362136075> , <@494883957117288448>'
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
@@ -30,11 +30,11 @@ let args = messageArray.slice(1)
       .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/R4kGmkR)`);
 message.channel.send(emb)
 }else 
-let words = args[0];
-        if(!words) return message.reply("Вы должны указать текст!");
-        let botmessage = args.join(" ");
-        message.delete().catch();
-        message.channel.send(botmessage);
+if(message.content == `${prefix}say`){
+  if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Вы не администратор!");
+    let botmessage = args.join(" ");
+    message.delete().catch();
+    message.channel.send(botmessage);
 }
   });
 client.on('ready', () => {
