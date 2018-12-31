@@ -8,7 +8,7 @@ client.on('message', message => {
   let messageArray = message.content.split(' ')
 let command = messageArray[0]
 let args = messageArray.slice(1) 
- let owners = 'Yioutra, Emile, MCArTyR. Helper - MegaMix_Craft'
+ let owners = <@495969202868322324> , <@405026246049923072> , <@355384371362136075> , <@494883957117288448>'
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
