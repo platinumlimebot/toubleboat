@@ -40,7 +40,7 @@ if(message.content == `${prefix}say`){
 client.on('ready', () => {
 client.user.setPresence({
     game:{
-name:"TubleBoat | tb!help",
+name:"Happy New Year | tb!help",
 type: 'WATCHING'    
 }
 })
