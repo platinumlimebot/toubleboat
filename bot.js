@@ -25,7 +25,7 @@ let args = messageArray.slice(1)
   }else
   if(message.content == `${prefix}invite`){
       let emb = new Discord.RichEmbed()
-      .setColor('00ff54')
+      .setColor('fff500')
       .setTitle('Приглашения:')
       .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/R4kGmkR)`);
 message.channel.send(emb)
