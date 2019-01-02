@@ -12,7 +12,7 @@ let args = messageArray.slice(1)
     let prefix = 'tb!';
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
-      .setColor('ff0000')
+      .setColor('fff500')
       .setTitle('Список команд:')
       .addField(`${prefix}help - помощь`, `Пример: ${prefix}help`)
       .addField(`${prefix}invite - приглашения`, `Пример: ${prefix}invite`)
