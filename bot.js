@@ -13,7 +13,7 @@ let args = messageArray.slice(1)
   if(message.content == `${prefix}help`){
       let emb = new Discord.RichEmbed()
       .setColor('fff500')
-      .setTitle('Список команд:')
+      .setTitle('Список команд')
       .addField(`${prefix}help - помощь`, `Пример: ${prefix}help`)
       .addField(`${prefix}invite - приглашения`, `Пример: ${prefix}invite`)
       .addField(`${prefix}developer - создатели бота`, `Пример: ${prefix}developer`)
@@ -26,8 +26,8 @@ let args = messageArray.slice(1)
   if(message.content == `${prefix}invite`){
       let emb = new Discord.RichEmbed()
       .setColor('fff500')
-      .setTitle('Приглашения:')
-      .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/E2g4W8k)`);
+      .setTitle('Приглашения')
+      .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/FmDKkKB)`);
 message.channel.send(emb)
 }else 
 if(message.content == `${prefix}say`){
