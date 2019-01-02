@@ -17,7 +17,7 @@ let args = messageArray.slice(1)
       .addField(`${prefix}help - помощь`, `Пример: ${prefix}help`)
       .addField(`${prefix}invite - приглашения`, `Пример: ${prefix}invite`)
       .addField(`${prefix}developer - создатели бота`, `Пример: ${prefix}developer`)
-      .setFooter(`Сервер поддержки бота: https://discord.gg/R4kGmkR`);
+      .setFooter(`Сервер поддержки бота: https://discord.gg/E2g4W8k`);
     message.channel.send(emb);
   }else
   if(message.content == `${prefix}developer`){
@@ -27,7 +27,7 @@ let args = messageArray.slice(1)
       let emb = new Discord.RichEmbed()
       .setColor('fff500')
       .setTitle('Приглашения:')
-      .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/R4kGmkR)`);
+      .setDescription(`[Пригласить бота](https://discordapp.com/oauth2/authorize?client_id=528496375004921857&scope=bot&permissions=8)\n[Сервер поддержки](https://discord.gg/E2g4W8k)`);
 message.channel.send(emb)
 }else 
 if(message.content == `${prefix}say`){
